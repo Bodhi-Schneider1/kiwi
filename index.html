@@ -2,9 +2,20 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>thing</title>
+        <title>Kiwi Academy</title>
     </head>
     <style>
+      #quotebox {
+        display: flex;
+        gap: 20px;
+        justify-content: center; 
+      }
+      .quotes {
+   
+        background-color : lightgray;
+       padding: 30px 20px;
+          display: inline-block;
+      }
     #login-bar {
         margin: -8px;
         text-align: center;
@@ -43,13 +54,26 @@ button:hover {
         .marg {
             margin: 50px;
         }
+      .spacer {
+        padding : 20px
+      }
         
     </style>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
     <body>
     <div id = "login-bar"> <button id = "log-in">Log in</button>Sign up for free today! Give us $$$ plss</div>
-    
-<h1 class = "center">Welcome to Kiwi Academy</h1>
-<h3 class = "center">cool slogan thing</h3>
-<p class = "marg"> blah blah blah i love demonstrating my html expertise blah blah blah we lowk need asthetic designer blah blah blah blah blah blah this is so you can see how the thing sticks blah blah blah blah i'll just keep repating all the blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs blahs </p>
-    </body>
+    <div class = "center" id = "hero">
+<h1 >Welcome to Kiwi Academy</h1>
+<h3 class = "typed">Learn to do math.. but better.</h3>
+      </div>
+      <div class = "spacer"></div>
+<p  class = "center" class = "marg"> Kiwi academy is unscientifically proven to raise students grades by up to <b>78.3%</b>. Join our growing movement of over [usercount] users. </p>
+      <div class = "spacer">
+      <div id = "quotebox"><p class = 'quotes'> Sorry I'm not interested right now - Cleo Pham</p><p class = 'quotes'> I don't like him - Skylar Krechman</p><p class = 'quotes'> Cleo is such a baddie - Liyan Zheng</p><p class = 'quotes'> Move on - Bodhi Schneider</p>
+  </body>
+  <script> new TypeIt(".typed", {
+  speed: 75,
+  loop: false,
+}).go();</script>
 </html>
